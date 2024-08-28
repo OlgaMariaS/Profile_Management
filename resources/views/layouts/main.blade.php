@@ -33,16 +33,18 @@
     <nav id="menu">
         <ul class="nav-bar">
             <li class="nav-item"><a href="/"><ion-icon name="home-outline"></ion-icon> Home</a></li>
+            <li class="nav-item"><a href="/curso"><ion-icon name="qr-code-outline"></ion-icon> Curso</a></li>
             @guest
                 <!-- se foi acessado a página estes campos somem -->
-                <li><a href="/login"><ion-icon name="enter-outline"></ion-icon> Login do administrador</a></li>
-                <li><a href="/register"><ion-icon name="person-circle-outline"></ion-icon> Cadastre-se</a></li>
-                <li><a href="saibaMais"><ion-icon name="information-circle-outline"></ion-icon> Saiba mais</a></li>
+                <li class="nav-item"><a href="/login"><ion-icon name="enter-outline"></ion-icon> Login do administrador</a></li>
+                <li class="nav-item"><a href="/register"><ion-icon name="person-circle-outline"></ion-icon> Cadastre-se</a></li>
+                <li class="nav-item"><a href="/saibaMais"><ion-icon name="information-circle-outline"></ion-icon> Saiba mais</a></li>
             @endguest
             @auth
                 <!-- se foi acessado a página estes campos ficam disponíveis -->
                 <li class="nav-item"><a href="/dashboard"><ion-icon name="person-add-outline"></ion-icon> Cadastrar</a></li>
-                <li class="nav-item"><a href="/#"><ion-icon name="people-outline"></ion-icon> Inscritos</a></li>
+                <li class="nav-item"><a href="/dashboard"><ion-icon name="people-outline"></ion-icon> Inscritos</a></li>
+                <li class="nav-item"><a href="/avaliacao"><ion-icon name="star-half-outline"></ion-icon> Avaliar</a></li>
                 <li class="nav-item">
                     <form action="/logout" method="POST">
                         @csrf

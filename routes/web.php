@@ -15,7 +15,13 @@ Route::get('/saibaMais', [EventController::class, 'saibaMais']);
 Route::get('/cadastrar.blade.php', [EventController::class, 'cadastrar']);
 
 //Rotas para a página visualizar cadastros
-Route::get('/inscritos.blade.php', [EventController::class, 'inscritos']);
+Route::get('/inscritos', [EventController::class, 'inscritos']);
+
+//Rotas para a página informações do Curso
+Route::get('/curso', [EventController::class, 'curso']);
+
+//Rotas para a página avaliar
+Route::get('/avaliacao', [EventController::class, 'avaliacao']);
 
 //Rotas para login 
 Route::middleware([
