@@ -14,7 +14,7 @@
 	<p>A disciplina DIN na comunidade propõe aos estudantes que façam uma ação extensionista envolvendo tecnologia para
 		a comunidade. A ação proposta é um curso de quatro aulas intensivo de informática com foco nas ferramentas do
 		Google Workspace.</p>
-	<div class="emenda"> <br>
+	<div class="curso"> <br>
 		<h3>Ementa do Curso</h3>
 		<ul>
 			<li><strong>Aula 1 - Conceitos de Informática</strong>

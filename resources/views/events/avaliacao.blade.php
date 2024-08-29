@@ -15,9 +15,9 @@
 		<p>Esta seção é destinada para o envio de comentários. Então, fique à vontade para expressar sua opinião,
 			críticas e sugestão em relação aos temas apresentados.</p>
 		<form action="/comentarios" method="POST" id="formComentario">
-		@csrf <!--Diretiva do blade para proteção-->
-			<!-- Deve puxar o ID do usuário mas não permitir edição dele -->
-			<label for="id">Código:</label>
+		@csrf {{--Diretiva do blade --}}
+			<!--  -->
+			<label for="id"></label>
 			<input type="text" id="id" name="id" required><br> 
 			<div class="comentario-box">
 				<textarea id="comentario-area" placeholder="Digite seu comentário aqui..." name="box-comentarios"></textarea>

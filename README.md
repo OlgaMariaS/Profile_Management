@@ -1,4 +1,4 @@
-## Sobre Projeto de Gerenciamentos de perfis 
+## Projeto de Gerenciamentos de perfis 
 
 Esta aplicação consiste em um site dinâmico que apresenta as informações sobre:
 
@@ -8,12 +8,12 @@ Esta aplicação consiste em um site dinâmico que apresenta as informações so
 
 Permitindo ao administrador do curso: 
 - 👩‍💻 Cadastrar-se e acessar a plataforma;
-- ➕ Inscrição de pessoas no curso;
+- ➕ Inscrever pessoas no curso;
 - ✏️ Edição dos dados dos inscritos;
-- ✅ Avaliação da plataforma por meio de comentários;
-- ❌ Remoção de pessoas;
+- ❌ Remoção de inscritos;
 - 🔍 Consulta de pessoas inscritas;
 - 📋 Visualização dos inscritos;
+- ✅ Avaliação da plataforma por meio de comentários;
 
 ## Tecnologias
 
@@ -106,7 +106,7 @@ php artisan serve
 ```
 #
 
-### Laravel Framework
+### Laravel Framework <ion-icon name="logo-laravel"></ion-icon>
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
