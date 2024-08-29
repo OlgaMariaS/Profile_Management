@@ -72,7 +72,7 @@
 	<br>
 	<div id="cronograma">
 		<h2>Cronograma</h2>
-		<table style="margin-left: auto; margin-right: auto;">
+		<table>
 			<thead>
 				<tr>
 					<th>Aula</th>

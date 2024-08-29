@@ -62,4 +62,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function pessoas(){
+        //Usuario contém várias pessoas
+        return $this->hasMany('App\Models\Pessoa');
+    }
 }

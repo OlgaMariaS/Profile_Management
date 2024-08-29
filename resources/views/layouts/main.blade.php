@@ -42,8 +42,8 @@
             @endguest
             @auth
                 <!-- se foi acessado a página estes campos ficam disponíveis -->
-                <li class="nav-item"><a href="/dashboard"><ion-icon name="person-add-outline"></ion-icon> Cadastrar</a></li>
-                <li class="nav-item"><a href="/dashboard"><ion-icon name="people-outline"></ion-icon> Inscritos</a></li>
+                <li class="nav-item"><a href="/cadastrar"><ion-icon name="person-add-outline"></ion-icon> Cadastrar</a></li>
+                <li class="nav-item"><a href="/inscritos"><ion-icon name="people-outline"></ion-icon> Inscritos</a></li>
                 <li class="nav-item"><a href="/avaliacao"><ion-icon name="star-half-outline"></ion-icon> Avaliar</a></li>
                 <li class="nav-item">
                     <form action="/logout" method="POST">
@@ -57,7 +57,6 @@
             @endauth
         </ul>
     </nav>
-    
 
     <div class="container-fluid">
         <div class="row">
@@ -67,6 +66,7 @@
             @endif
         </div>
     </div>   
+
     <!-- Alterar conteúdo dinâmicamente -->
     @yield('content')
     
@@ -77,5 +77,4 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
