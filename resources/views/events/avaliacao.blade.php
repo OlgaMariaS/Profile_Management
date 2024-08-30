@@ -24,9 +24,9 @@
 				<input type="email" id="email" name="email" placeholder="Seu email" required>
 			</div>
 			<div class="comentario-box">
-				<textarea id="comentario-area" placeholder="Digite seu comentário aqui..." name="box-comentarios"></textarea>
-				<button class="botao-enviar" type="submit">Enviar</button>
+				<textarea type="text" id="comentario-area" placeholder="Digite seu comentário aqui..." name="comentario" required></textarea>
 			</div>
+			<button class="botao-enviar" type="submit">Enviar</button>
 		</form>
 </main>
 

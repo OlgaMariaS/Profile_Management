@@ -11,7 +11,7 @@
 
 <main class="mainCadastro">
   <form action="/pessoas" method="POST" id="cadastro-form">
-      @csrf <!-- Diretiva do Blade -->
+      @csrf {{-- Diretiva do Blade --}}
 
       <div class="form-group">
         <label for="nome"><ion-icon name="person-outline"></ion-icon> Nome:</label>
