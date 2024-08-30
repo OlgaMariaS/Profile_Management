@@ -24,25 +24,25 @@ Route::get('/inscritos', [EventController::class, 'inscritos'])->middleware('aut
 //Rotas para a página principal após o cadastro do adm
 Route::get('/dashboard', [EventController::class, 'index'])->middleware('auth');
 
-//Rotas para a página avaliar
+//Rotas para a página de avaliação
 Route::get('/avaliacao', [EventController::class, 'avaliacao'])->middleware('auth');
 
 //Rotas para salvar cadastro no banco 
 Route::post('/pessoas', [EventController::class, 'store'])->middleware('auth');
 
-//Rotas para salvar cadastro no banco 
+//Rotas para salvar comentario no banco 
 Route::post('/avaliacoes', [EventController::class, 'storeAvaliacao'])->middleware('auth');
 
 //Rotas para deletar cadastro do banco 
 Route::delete('/pessoas/{id}', [EventController::class, 'destroy'])->middleware('auth');
 
-//Rotas para editar cadastro do banco 
+//Rotas que puxa dados do banco para página editar
 Route::get('/pessoas/editar/{id}', [EventController::class, 'edit'])->middleware('auth');
 
 //Rotas para atualizar cadastro do banco 
 Route::put('/pessoas/update/{id}', [EventController::class, 'update'])->middleware('auth');
 
-//Rotas após login 
+//Rotas após login (escrita pelo pacote livewire)
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

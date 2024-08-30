@@ -14,7 +14,6 @@
 			críticas e sugestão em relação aos temas apresentados.</p>
 		<form action="/avaliacoes" method="POST" id="formComentario">
 		@csrf {{--Diretiva do blade --}}
-			<!--  -->
 			<div class="form-group">
 				<label for="nome"><ion-icon name="person-outline"></ion-icon> Nome:</label>
 				<input type="text" id="nome" name="nome" placeholder="Seu nome" required>

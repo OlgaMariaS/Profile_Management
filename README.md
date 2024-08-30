@@ -52,16 +52,16 @@ composer global require laravel/installer
 ```
 
 #### 5. Criar o Diretório do Projeto
-Crie uma pasta chamada `Curso_Informatica`.
+Crie uma pasta chamada `Profile_Management`.
 
 #### 6. Criar o Projeto Laravel
-Dentro da pasta `Curso_Informatica`, execute um dos seguintes comandos para criar o projeto:
+Dentro da pasta `Profile_Management`, execute um dos seguintes comandos para criar o projeto:
 ```bash
-composer create-project laravel/laravel Curso_Informatica
+composer create-project laravel/laravel Profile_Management
 ```
 ou
 ```bash
-laravel new Curso_Informatica
+laravel new Profile_Management
 ```
 #### 7. Instalar os pacotes 
 Instalação dos pacotes Jetstream e Livewire para autenticação e segurança no login da aplicação 

@@ -28,7 +28,7 @@ class EventController extends Controller
     }
 
     public function inscritos(){
-        //Puxa os dados do usuario logado
+        //Dados do usuario logado
         $user = auth()->user();
 
         //Pega o que está na escrito no form de pesquisa com nome 'search'
@@ -60,12 +60,13 @@ class EventController extends Controller
         $pessoa->idade = $request->idade;
         $pessoa->telefone = $request->telefone;
         $pessoa->cidade = $request->cidade;
-        
-        //O usuário logado fica atrelado a essa tabela Pessoa
+
+        //O usuário logado fica atrelado a essa Pessoa
         $user = auth()->user();
         $pessoa->user_id = $user->id;
 
         $pessoa->save();
+
         //Redireciona para a tela de login
         return redirect('cadastrar')->with('msg', "Cadastro realizada com sucesso!");
     }
@@ -78,6 +79,10 @@ class EventController extends Controller
         $comentario->email = $request->email; 
         $comentario->comentario = $request->comentario;
         
+        //O usuário logado fica atrelado ao comentario
+        $user = auth()->user();
+        $comentario->user_id = $user->id;
+
         $comentario->save();
 
         return redirect('avaliacao')->with('msg', "Obrigado pelo seu feedback😄");
@@ -93,6 +98,7 @@ class EventController extends Controller
 
     //A partir do ID selecionado, pega os dados da pessoa no banco e redireciona pra tela para edição
     public function edit($id){
+
         $pessoa = Pessoa::findOrFail($id);
 
         return view('events.editar', ['pessoa' => $pessoa]);
@@ -100,6 +106,7 @@ class EventController extends Controller
 
     //Salva no banco as novas informações do cadastro
     public function update(Request $request){
+        
         Pessoa::findOrFail($request->id)->update($request->all());
 
         return redirect('/inscritos')->with('msg', "Cadastro atualizado com sucesso!");

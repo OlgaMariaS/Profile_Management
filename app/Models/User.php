@@ -67,4 +67,9 @@ class User extends Authenticatable
         //Usuario contém várias pessoas
         return $this->hasMany('App\Models\Pessoa');
     }
+
+    public function comentarios(){
+        //Usuario contém vários comentarios
+        return $this->hasMany('App\Models\Comentario');
+    }
 }
