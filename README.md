@@ -1,6 +1,6 @@
 ## Projeto de Gerenciamento de cadastros  
 
-### ### <a href="http://52.15.207.38/" target="_blank">Acesse a página aqui</a>
+### <a href="http://52.15.207.38/" target="_blank">Acesse a página aqui</a>
 
 Esta aplicação consiste em um site dinâmico que apresenta as informações sobre:
 
@@ -79,8 +79,10 @@ composer require laravel/jetstream
 php artisan jetstream:install livewire
 ```
 ```
+#
 
 #### Conexão com o Banco de Dados
+
 Assista ao vídeo sobre [Conexão com Banco](https://www.youtube.com/watch?v=zQdBSpTDQpQ).
 
 1. Ative o Apache e o MySQL no XAMPP.
