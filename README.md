@@ -1,4 +1,6 @@
-## Projeto de Gerenciamentos de perfis 
+## Projeto de Gerenciamentos de cadastros  
+
+### [Acesse a página aqui](http://52.15.207.38/).
 
 Esta aplicação consiste em um site dinâmico que apresenta as informações sobre:
 
@@ -42,19 +44,23 @@ Baixe e instale o Composer: [Composer](https://getcomposer.org/).
    rundll32 sysdm.cpl,EditEnvironmentVariables
    ```
 3. Encontre a variável `Path`, selecione-a e clique em **Editar**.
-4. Adicione o caminho do php por exemplo `C:\xampp\php`.
-5. Clique em **Salvar**
+4. Adicione o caminho do php, por exemplo: `C:\xampp\php`.
+5. Clique em **Salvar**.
 
-#### 4. Instalar o Laravel
+#### 4. Instalar o Node.js
+Baixe e instale o Node.js: [Node.js](https://nodejs.org/).
+- Durante a instalação, certifique-se de marcar a opção para adicionar o Node.js ao `PATH` do sistema.
+
+#### 5. Instalar o Laravel
 No prompt de comando, execute:
 ```bash
 composer global require laravel/installer
 ```
 
-#### 5. Criar o Diretório do Projeto
+#### 6. Criar o Diretório do Projeto
 Crie uma pasta chamada `Profile_Management`.
 
-#### 6. Criar o Projeto Laravel
+#### 7. Criar o Projeto Laravel
 Dentro da pasta `Profile_Management`, execute um dos seguintes comandos para criar o projeto:
 ```bash
 composer create-project laravel/laravel Profile_Management
@@ -63,13 +69,15 @@ ou
 ```bash
 laravel new Profile_Management
 ```
-#### 7. Instalar os pacotes 
-Instalação dos pacotes Jetstream e Livewire para autenticação e segurança no login da aplicação 
+
+#### 8. Jetstream e Livewire
+Nesse projeto foi instalado os pacotes Jetstream e Livewire para autenticação e segurança no login da aplicação, fazendo fork não é necessário instalar
 ```bash
-composer require laravel/jetstram
+composer require laravel/jetstream
 ```
 ```bash
 php artisan jetstream:install livewire
+```
 ```
 
 #### Conexão com o Banco de Dados
@@ -89,9 +97,6 @@ Assista ao vídeo sobre [Conexão com Banco](https://www.youtube.com/watch?v=zQd
    DB_USERNAME=youname
    DB_PASSWORD=yourpassword
    ```
-
-#### Solução de Problemas: Erro de Porta
-Se ocorrer um erro de portas, altere a porta de `3306` para `3307` no arquivo `C:\xampp\mysql\bin\my.ini`.
 
 #### Migração de Tabelas
 Execute o comando a seguir para migrar as tabelas para o banco de dados `ProfileManagement`:
