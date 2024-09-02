@@ -1,6 +1,6 @@
 ## Projeto de Gerenciamentos de cadastros  
 
-### [Acesse a página aqui](http://52.15.207.38/).
+### [Acesse a página aqui](http://52.15.207.38/)
 
 Esta aplicação consiste em um site dinâmico que apresenta as informações sobre:
 
