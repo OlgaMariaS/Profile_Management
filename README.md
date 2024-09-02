@@ -1,4 +1,4 @@
-## Projeto de Gerenciamentos de cadastros  
+## Projeto de Gerenciamento de cadastros  
 
 ### [Acesse a página aqui](http://52.15.207.38/)
 
@@ -81,6 +81,7 @@ php artisan jetstream:install livewire
 ```
 
 #### Conexão com o Banco de Dados
+
 Assista ao vídeo sobre [Conexão com Banco](https://www.youtube.com/watch?v=zQdBSpTDQpQ).
 
 1. Ative o Apache e o MySQL no XAMPP.
