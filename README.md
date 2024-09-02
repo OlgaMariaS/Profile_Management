@@ -1,6 +1,6 @@
 ## Projeto de Gerenciamento de cadastros  
 
-### [Acesse a página aqui](http://52.15.207.38/)
+### ### <a href="http://52.15.207.38/" target="_blank">Acesse a página aqui</a>
 
 Esta aplicação consiste em um site dinâmico que apresenta as informações sobre:
 
@@ -81,7 +81,6 @@ php artisan jetstream:install livewire
 ```
 
 #### Conexão com o Banco de Dados
-
 Assista ao vídeo sobre [Conexão com Banco](https://www.youtube.com/watch?v=zQdBSpTDQpQ).
 
 1. Ative o Apache e o MySQL no XAMPP.
@@ -98,6 +97,9 @@ Assista ao vídeo sobre [Conexão com Banco](https://www.youtube.com/watch?v=zQd
    DB_USERNAME=youname
    DB_PASSWORD=yourpassword
    ```
+
+#### Solução de Problemas: Erro de Porta
+Se ocorrer um erro de portas, altere a porta de `3306` para `3307` no arquivo `C:\xampp\mysql\bin\my.ini`.
 
 #### Migração de Tabelas
 Execute o comando a seguir para migrar as tabelas para o banco de dados `ProfileManagement`:
@@ -127,3 +129,4 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ### License
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
