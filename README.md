@@ -98,9 +98,6 @@ Assista ao vídeo sobre [Conexão com Banco](https://www.youtube.com/watch?v=zQd
    DB_PASSWORD=yourpassword
    ```
 
-#### Solução de Problemas: Erro de Porta
-Se ocorrer um erro de portas, altere a porta de `3306` para `3307` no arquivo `C:\xampp\mysql\bin\my.ini`.
-
 #### Migração de Tabelas
 Execute o comando a seguir para migrar as tabelas para o banco de dados `ProfileManagement`:
 ```bash
