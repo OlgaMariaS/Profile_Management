@@ -78,8 +78,6 @@ composer require laravel/jetstream
 ```bash
 php artisan jetstream:install livewire
 ```
-```
-#
 
 #### Conexão com o Banco de Dados
 
